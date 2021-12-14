@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "kirura-video",
+    "version": "1.0.0",
+    "description": "",
+    "content_scripts": [
+      {
+        "matches": ["https://nework.app/*", "https://meet.google.com/*"],
+        "js": ["src/loader.js"],
+        "css":["src/css/style.css"],
+        "run_at": "document_start",
+        "all_frames": true
+      }
+    ],
+    "web_accessible_resources": [
+        "src/index.js"
+    ]
+  }
